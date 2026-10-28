@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manushi | Portfolio</title>
+  <style>
+    :root {
+      --bg: #f7f5fb;
+      --ink: #1f1b2e;
+      --muted: #5c5870;
+      --accent: #5b3fd0;
+      --card: #ffffff;
+      --line: #e3dff0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header { padding: 80px 0 48px; }
+    h1 { font-size: clamp(2.6rem, 8vw, 4.2rem); margin: 0 0 8px; line-height: 1.1; }
+    .tagline { font-size: 1.25rem; color: var(--muted); margin: 0 0 24px; }
+    nav a {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      color: var(--accent);
+      margin-right: 20px;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    nav a:hover, nav a:focus { border-bottom-color: var(--accent); outline: none; }
+    section { padding: 40px 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 1.6rem; margin: 0 0 16px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; list-style: none; margin: 0; }
+    .skills li {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      padding: 6px 14px;
+      border: 1px solid var(--accent);
+      border-radius: 999px;
+      color: var(--accent);
+    }
+    .project { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; margin-bottom: 14px; }
+    .project h3 { margin: 0 0 4px; font-size: 1.15rem; }
+    .project p { margin: 0; color: var(--muted); }
+    a { color: var(--accent); }
+    footer { padding: 32px 0 56px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Manushi</h1>
+      <p class="tagline">Software development student building mobile apps and websites.</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I am a master's student in software development. I am learning to build apps for iOS, Android and React Native, and I enjoy turning small ideas into working projects.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>React Native</li>
+        <li>Swift</li>
+        <li>Android Studio</li>
+        <li>AWS EC2</li>
+        <li>Nginx</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Tic-Tac-Toe (iOS)</h3>
+        <p>A two-player game built with Swift in Xcode.</p>
+      </div>
+      <div class="project">
+        <h3>Camera Capture App (Android)</h3>
+        <p>An Android app that takes a photo with the device camera.</p>
+      </div>
+      <div class="project">
+        <h3>Music Player App (Android)</h3>
+        <p>A simple song app built in Android Studio.</p>
+      </div>
+      <div class="project">
+        <h3>Forms and Lists (React Native)</h3>
+        <p>Screens with forms, pickers, lists and modals.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:yourname@example.com">shiie112411@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+      &copy; 2026 Manushi. Hosted on AWS.
+    </footer>
+  </div>
+</body>
+</html>
